@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo img{
+    height: 60px;
+    width: 85px;
+}
+body{
+
+    position: relative;
+}
+header{
+    position: static; 
+}
+nav{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 45px;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: darkslategray;
+    font-size: 17px;
+}
+header input[type="checkbox"]{
+    display: none;
+}
+header input[type="checkbox"]:checked+ nav ul{
+    display: none;
+}
+.search button{
+    padding: 7px 10px 7px 10px;
+font-size: 22px;
+border: 1px solid lightgray;
+border-radius: 3px;
+margin-right: 500px;
+position: relative;
+}
+.search input[type="text"]{
+    padding: 10px 280px 13px 4px;
+    border: 1px solid lightgray;
+    background-color: rgba(234, 234, 234, 0.968);
+    position: absolute;
+    right: 340px;
+}
+.bag{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 15px 15px;
+    font-size: 15px;
+}
+.line{
+    width: 100%;
+    border: 1px solid lightgray;
+    /* filter: drop-shadow(44px); */
+}
+.home{
+   margin: 40px 20px 0px 30px;
+}
+.dress{
+    margin: 20px 20px 0px 30px;
+}
+.filter{
+    display: flex;
+}
+.filter b{
+    margin: 40px 20px 0px 30px;
+}
+.drop{
+    margin: 40px 0px 0px 280px;
+}
+.sort select{
+    margin-left: 850px;
+    padding: 10px;
+    cursor: pointer;
+}
+.line{
+    width: 100%;
+    border: 1px solid lightgray;
+    margin-top: 20px;
+}
+.gender{ 
+    border: 2px solid lightgray;
+    width: 300px;
+    height: 220px;
+}
+.bar{
+    justify-content: space-around;
+    position: relative;
+}
+.gender input[type="radio"]{
+    margin: 20px 20px;
+}
+.categories{
+    border: 2px solid lightgray;
+    width: 300px;
+    height: 160px;
+}
+.categories .cat{
+    margin: 20px 20px; 
+}
+.categories input[ type="checkbox"]{
+    margin: 15px 20px;  
+}
+.brand{
+    border: 2px solid lightgray;
+    width: 300px;
+    height: 370px; 
+}
+.brand .brnd{
+    margin: 15px 20px; 
+}
+.brnd button{
+    margin-left: 160px;
+    padding: 7px 7px;
+    border-radius: 40px;
+    border: none;
+}
+.brnd button i{
+   font-size: 15px;
+}
+.brand input[ type="checkbox"]{
+    margin: 10px 20px;  
+}
+ h3{
+    color: rgb(211, 9, 9);
+    margin: 10px 20px; 
+}
+.price{
+    border: 2px solid lightgray;
+    width: 300px;
+    height: 200px;
+}
+.price .prc{
+    margin: 15px 20px; 
+}
+.price input[ type="checkbox"]{
+    margin: 10px 20px;  
+}
+.color{
+    border: 2px solid lightgray;
+    width: 300px;
+    height: 340px;  
+}
+.clr button i{
+    font-size: 15px;
+ }
+ .clr button{
+    margin-left: 160px;
+    padding: 7px 7px;
+    border-radius: 40px;
+    border: none;
+}
+.color .clr{
+    margin: 15px 20px; 
+}
+.color input[ type="checkbox"]{
+    margin: 10px 20px;  
+}
+.discount{
+    border: 2px solid lightgray;
+    width: 300px;
+    height: 360px;    
+}
+.discount .dis{
+    margin: 15px 20px; 
+}
+.discount input[ type="radio"]{
+    margin: 10px 20px;  
+}
+.side-bar{
+    display: flex;
+}
+.home img{
+    width: 200px;
+    height: 250px;
+    margin: 10px 30px 30px 30px;
+    cursor: pointer;
+}
+/* @media screen and (max-width:768px){
+    ul{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 30%;
+        background-color: brown;
+        display: block;
+        text-align: center;
+    }
+    input[type="checkbox"]:checked+ nav ul{
+    display: none;
+}
+} */

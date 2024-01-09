@@ -28,7 +28,6 @@
             margin-top: 60px;
             width: 600px;
             height: 40px;
-            border: 2px solid black;
         }
         .button button{
           margin: 40px 10px 0px 0px ;
@@ -45,13 +44,13 @@
 
     <input type="text" class="text"    id="Converter" placeholder="Type or Paste your content here">
     <div class="button">
-    <button onclick="sent()">Sentance case</button>
+    <button onclick="split()">Split Case</button>
 
-    <button onclick="lower()">lower case</button>
+    <button onclick="lower()">lower Case</button>
 
     <button onclick="upper()">UPPER CASE</button> <br>
 
-    <button onclick="alter()">aLtErNaTiVe cAsE</button>
+    <button onclick="repeat()">Repeat Case</button>
 
     <button onclick="clear()">Clear</button>    
     </div>
@@ -59,11 +58,11 @@
 
 
    <script>
-      function sent()
+      function split()
             {
             
                 let inputtext = document.getElementById("Converter").value
-                document.getElementById("Converter").value=inputtext.toSentenceCase();
+                document.getElementById("Converter").value=inputtext.split('');
             }
             function upper()
             {
@@ -76,20 +75,18 @@
                 let inputtext = document.getElementById("Converter").value
                 document.getElementById("Converter").value=inputtext.toLowerCase();
             }
-            function alter()
+            function repeat()
             {
             
                 let inputtext = document.getElementById("Converter").value
-                document.getElementById("Converter").value=inputtext.toAlternativeCase();
+                document.getElementById("Converter").value=inputtext.repeat( 3 );
             } 
             function clear()
             {
             
                 let inputtext = document.getElementById("Converter").value
-                document.getElementById("Converter").value=clear.clear();
+                document.getElementById("Converter").value=clear.clear('');
             }
-
-            // others are not working only uppercase and lower case are only working
    </script>
 </body>
 </html>

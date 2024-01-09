@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+}
+nav button{
+    background-color: black;
+    border: none;
+}
+.instagram{
+    color: aliceblue;
+}
+.navbtn img{
+height: 100px;
+width: 280px;
+}
+.navbtn .hrt{
+    font-size: 50px;
+position: absolute;
+right: 250px;
+}
+.navbtn .msg{
+    font-size: 50px;
+    position: absolute;
+    right: 90px;
+}
+.story{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+}
+.story-container{
+    display: flex;
+    grid-auto-flow: column;
+    grid-auto-columns: 5rem;
+}
